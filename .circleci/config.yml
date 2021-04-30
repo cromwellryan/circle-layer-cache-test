@@ -3,7 +3,9 @@ version: 2.1
 jobs:
   go:
     docker:
-      - image: buildpack-deps:trusty
+    machine:
+      image: ubuntu-2004:202104-01
+      docker_layer_caching: true
     steps:
       - setup_remote_docker:
           version: 20.10.2 #19.03.13
