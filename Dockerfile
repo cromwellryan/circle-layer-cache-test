@@ -1,3 +1,3 @@
 FROM ubuntu:groovy
 
-CMD echo "Hello from $(uname --all)"
+CMD echo "Hello! $(uname --all)"
