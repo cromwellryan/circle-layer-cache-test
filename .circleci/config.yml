@@ -4,7 +4,7 @@ jobs:
   go:
     docker:
     machine:
-      image: ubuntu-2004:202104-01
+      image: cimg/base:2021.05
       docker_layer_caching: true
     steps:
       - setup_remote_docker:
